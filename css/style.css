@@ -248,5 +248,30 @@ footer-area-box {
 
 .footer-area-info-image {
     width: 228px;
+    margin-bottom: 8px;
 }
 
+.footer-area-info-text {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal; 
+    color: #252525; 
+    margin-bottom: 48px;
+}
+
+.footer-area-searh-box {
+    width: 779px;
+    height: 75px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    box-shadow: 0 42px 80px 0 rgba(0, 0, 0, 0.25);
+}
+
+.footer-area-searh-box {
+    display: flex;
+}
+
+.footer-area-searh-direction {
+    background-image: url(../images/pin\ 1.png);
+}
