@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+    src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+
+body {
+    max-width: 1728px;
+    height: 5995px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+.page {
+    margin-right: 144px;
+    margin-left: 144px;
+    margin-top: 31px; 
+     
+}
+
+.footer-top {
+    display: flex;
+    gap: 37px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.footer-top-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.footer-top-navigation-list {
+    display: flex;
+    gap: 53px; 
+}
+
+.footer-top-navigation-item {   
+    padding: 15px;
+    display: block;
+    font-size: 15px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.footer-top-navigation-item:hover {
+    background-color: #FFD600;
+    border-radius: 23px;
+    font-weight: 600;
+}
+
+.footer-top-navigation-item-link {
+    color: black;
+}
+
+.footer-top-icon-list {
+    display: flex;
+    gap: 20px;
+    align-items: center; 
+}
+
+.footer-top-icon-item {
+    
+}
+.footer-top-item-heart {
+    width: 50px;
+    height: 50px;
+    background-color: #F5F5F5;
+    background-image: url(../images/heart.png);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center center;
+    
+}
+
+.footer-top-item-searh {
+    width: 50px;
+    height: 50px;
+    background-color: #F5F5F5;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center center; 
+    
+}
+
+.footer-top-item-input {
+    width: 114px;
+    height: 50px;
+    background-color: #F5F5F5;
+    border-radius: 23px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.footer-area-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 639px;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    background-image: url(../images/man-sits-end-trolltunga-before-mountains\ 1.png);
+}
+
+.footer-area-box::before {
+    content: "";
+    background-color: #000000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    border-radius: 20px;
+}
+
+footer-area-box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.footer-area-info {
+    width: 549px;
+    text-align: center;
+    margin-top: 124px;
+}
+.footer-area-info-title {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 52px;
+    color: #252525;
+    text-align: center;
+}
+
+.footer-area-info-image {
+    width: 228px;
+}
+
