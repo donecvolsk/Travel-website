@@ -165,9 +165,35 @@ body {
     align-items: center; 
 }
 
-.footer-top-icon-item {
-    
-}
+/* Выпадающее меню*/
+.footer-top-navigation-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer-top-navigation-dropdown-box {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .footer-top-navigation-dropdown-box a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+  }
+  .footer-top-navigation-dropdown-box a:hover {background-color: #ddd;}
+
+  .footer-top-navigation-dropdown:hover  .footer-top-navigation-dropdown-box {
+    display: block;
+  }
+
+
+  
 .footer-top-item-heart {
     width: 50px;
     height: 50px;
@@ -261,17 +287,68 @@ footer-area-box {
 }
 
 .footer-area-searh-box {
+    display: flex;
+    align-items: center;
     width: 779px;
     height: 75px;
     background-color: #ffffff;
     border-radius: 100px;
     box-shadow: 0 42px 80px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
 }
 
-.footer-area-searh-box {
+.footer-area-searh-list {
     display: flex;
 }
 
-.footer-area-searh-direction {
+.footer-area-searh-dropdownSity {
+    display: flex;
+    gap: 10px;
+    color: #7B7B7B;
+    font-size: 15px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    border-right: 1px solid #DBDBDB;
+    padding-right: 28px;
+}
+
+.footer-area-searh-mapsBox {
+    width: 37px;
+    height: 37px;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
     background-image: url(../images/pin\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.footer-area-searh-select {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: normal; 
+    color: #252525; 
+}
+
+.footer-area-searh-dropdownDate {
+    display: flex;
+    gap: 10px;
+    color: #7B7B7B;
+    font-size: 15px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 28px;
+}
+
+.footer-area-searh-dateBox {
+    width: 37px;
+    height: 37px;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+    background-image: url(../images/pin\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }

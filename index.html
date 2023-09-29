@@ -15,7 +15,14 @@
             <menu class="footer-top-box">
                 <ul class="footer-top-navigation-list">
                     <li class="footer-top-navigation-item">
-                        <a class="footer-top-navigation-item-link" href="#0">Направления</a>
+                        <div class="footer-top-navigation-dropdown">
+                            <button  class="footer-top-navigation-dropbtn" href="#0">Направления</button>
+                            <div class="footer-top-navigation-dropdown-box" id="myDropdown">
+                                <a href="#0">Москва</a>
+                                <a href="#0">Санкт-Петербург</a>
+                                <a href="#0">Сочи</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="footer-top-navigation-item">
                         <a class="footer-top-navigation-item-link" href="#0">О сервисе</a>
@@ -50,8 +57,25 @@
             <div class="footer-area-info-text">Экскурсии и частные гиды в России и за рубежом</div>
             <div class="footer-area-searh-box">
                 <ul class="footer-area-searh-list"> 
+                    <li class="footer-area-searh-item">                      
+                        <div class="footer-area-searh-dropdownSity">
+                            <div class="footer-area-searh-mapsBox">
+                            </div>                           
+                            <select class="footer-area-searh-select" name="Sity" id="city-select">  
+                                <option class="footer-area-searh-option" value="">Выберите направление</option>
+                                <option class="footer-area-searh-option" value="">Москва</option>
+                                <option class="footer-area-searh-option" value="">Санкт-Петербург</option>
+                                <option class="footer-area-searh-option" value="">Сочи</option>
+                            </select>
+                        </div>
+                    </li>
                     <li class="footer-area-searh-item">
-
+                        <div class="footer-area-searh-dropdownDate">
+                            <div class="footer-area-searh-date">
+                                <div class="footer-area-searh-dateBox">
+                                </div>  
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -61,5 +85,6 @@
 
     </footer>
    </div>
+   
 </body>
 </html>
